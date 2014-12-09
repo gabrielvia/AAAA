@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="1.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd">
+  <persistence-unit name="itransportconfigtool" transaction-type="RESOURCE_LOCAL">
+    <provider>org.hibernate.ejb.HibernatePersistence</provider>
+    <!--
+    <class>Business.Measurement.MeasurementType</class>
+    <class>Business.Measurement.ValidRange</class>
+    <class>Business.Measurement.NormalRange</class>
+    <class>Business.Measurement.MeasurementStandard</class>
+    <class>Business.Measurement.Age</class>
+    <class>Business.Measurement.CriticalRange</class>
+    <class>Business.UserAccount.Staff</class>
+    <class>Business.UserAccount.Address</class>
+    <class>Business.UserAccount.UserAccount</class>
+    <class>Business.UserAccount.UserAccountLog</class>
+    <class>Business.UserAccount.UserAction</class>
+    -->
+    <properties>
+      <property name="hibernate.connection.username" value="root"/>
+      <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
+      <property name="hibernate.connection.password" value="123321"/>
+      <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/itransportconfigtool"/>
+      <property name="hibernate.cache.provider_class" value="org.hibernate.cache.NoCacheProvider"/>
+      <property name="hibernate.hbm2ddl.auto" value="update"/>
+    </properties>
+  </persistence-unit>
+</persistence>
